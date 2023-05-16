@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\grant\\Documents\\GitHub\\Spice-Wise\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\grant\\Documents\\GitHub\\Spice-Wise\\wwwroot\\fonts\\MPLUSRounded1c-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\MPLUSRounded1c-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\grant\\Documents\\GitHub\\Spice-Wise\\wwwroot\\fonts\\MPLUSRounded1c-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\MPLUSRounded1c-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\grant\\Documents\\GitHub\\Spice-Wise\\wwwroot\\fonts\\MPLUSRounded1c-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\MPLUSRounded1c-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\grant\\Documents\\GitHub\\Spice-Wise\\wwwroot\\fonts\\MPLUSRounded1c-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\MPLUSRounded1c-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\grant\\Documents\\GitHub\\Spice-Wise\\wwwroot\\fonts\\MPLUSRounded1c-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\MPLUSRounded1c-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\grant\\Documents\\GitHub\\Spice-Wise\\wwwroot\\fonts\\MPLUSRounded1c-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\MPLUSRounded1c-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\grant\\Documents\\GitHub\\Spice-Wise\\wwwroot\\fonts\\MPLUSRounded1c-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\MPLUSRounded1c-Thin.ttf"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.Spice-Wise.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.Spice-Wise.props",
+      "PackagePath": "build\\Spice-Wise.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Spice-Wise.props",
+      "PackagePath": "buildMultiTargeting\\Spice-Wise.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.Spice-Wise.props",
+      "PackagePath": "buildTransitive\\Spice-Wise.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -4,18 +4,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Spice-Wise</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/68c27c1bdd.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <span>This is the header section!</span>
+        <header class="header">
+            <div class="brand">
+            <i class="fa-solid fa-pepper-hot logo" style="color: #ffffff;"></i>
+            Spice-Wise
+            </div>
         </header>
-        <div>
+        <div class="content">
             <main role="main">
                 @RenderBody()
             </main>
         </div>
-        <footer>
-            <span>This is the footer section!</span>
+        <footer class="footer">
+
         </footer>
     </body>
 </html>

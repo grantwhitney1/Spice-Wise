@@ -96,3 +96,4 @@ C:\Users\grant\Documents\GitHub\Spice-Wise\bin\Debug\net7.0\runtimes\win\lib\net
 C:\Users\grant\Documents\GitHub\Spice-Wise\obj\Debug\net7.0\Spice-Wise.csproj.CopyComplete
 C:\Users\grant\Documents\GitHub\Spice-Wise\obj\Debug\net7.0\Spice-Wise.RazorAssemblyInfo.cache
 C:\Users\grant\Documents\GitHub\Spice-Wise\obj\Debug\net7.0\Spice-Wise.RazorAssemblyInfo.cs
+C:\Users\grant\Documents\GitHub\Spice-Wise\bin\Debug\net7.0\Spice-Wise.staticwebassets.runtime.json

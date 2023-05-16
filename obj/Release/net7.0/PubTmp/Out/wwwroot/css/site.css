@@ -1,0 +1,92 @@
+﻿@font-face {
+    font-family: 'MPL';
+    src: url('/fonts/MPLUSRounded1c-Thin.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'MPL';
+    src: url('/fonts/MPLUSRounded1c-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'MPL';
+    src: url('/fonts/MPLUSRounded1c-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'MPL';
+    src: url('/fonts/MPLUSRounded1c-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'MPL';
+    src: url('/fonts/MPLUSRounded1c-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'MPL';
+    src: url('/fonts/MPLUSRounded1c-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'MPL';
+    src: url('/fonts/MPLUSRounded1c-Black.ttf');
+    font-weight: 900;
+}
+
+* {
+    font-family: 'MPL';
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 5vh;
+    height: 5vh;
+    margin-right: 1vw;
+}
+
+.brand {
+    font-size: 3.5vh;
+    font-weight: 800;
+    color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    height: 10%;
+    box-shadow: 0 1px 64px rgb(0, 100, 25, 0.4);
+    background-color: rgb(100 200 140);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    height: 5%;
+    box-shadow: 0 -1px 64px rgb(0, 100, 25, 0.4);
+    background-color: rgb(60 120 90);
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    background-color: white;
+    flex: 1;
+}
