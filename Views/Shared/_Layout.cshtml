@@ -9,22 +9,14 @@
     </head>
     <body>
         <header class="header">
-            <div class="nav-section">
-                <partial name="_NavButton" view-data='new ViewDataDictionary(ViewData) { {"Action", "Index"}, {"Controller", "Home"} }'/>
-                <partial name="_NavButton" view-data='new ViewDataDictionary(ViewData) { {"Action", "Index"}, {"Controller", "Collection"} }' />
-                <partial name="_NavButton" view-data='new ViewDataDictionary(ViewData) { {"Action", "Index"}, {"Controller", "Planner"} }' />
-            </div>
+            <partial name="_NavArea" model='new string[] {"Home", "Collection", "Planner"}'/>
 
             <div class="brand">
             <i class="fa-solid fa-pepper-hot logo" style="color: #ffffff;"></i>
             spice-wise
             </div>
 
-            <div class="nav-section">
-                <partial name="_NavButton" view-data='new ViewDataDictionary(ViewData) { {"Action", "Index"}, {"Controller", "Support"} }'/>
-                <partial name="_NavButton" view-data='new ViewDataDictionary(ViewData) { {"Action", "Index"}, {"Controller", "About"} }' />
-                <partial name="_NavButton" view-data='new ViewDataDictionary(ViewData) { {"Action", "Index"}, {"Controller", "Preferences"} }' />
-            </div>
+            <partial name="_NavArea" model='new string[] {"Support", "About", "Preferences"}' />
         </header>
         <div class="content">
             <main role="main">
