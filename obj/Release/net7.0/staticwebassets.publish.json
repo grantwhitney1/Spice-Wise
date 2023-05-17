@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0XQklNq37Uo6zye2I40xmM+RciAkn6rdcPUGjz1eEdQ=",
+  "Hash": "RWSU2GvyvcMATLfvFhuD5OSH1x/7hww9KSDfUdOtQLs=",
   "Source": "Spice-Wise",
   "BasePath": "_content/Spice-Wise",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\MPLUSRounded1c-Thin.ttf"
+    },
+    {
+      "Identity": "C:\\Users\\grant\\Documents\\GitHub\\Spice-Wise\\wwwroot\\svgs\\pepper-hot-solid.svg",
+      "SourceId": "Spice-Wise",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\grant\\Documents\\GitHub\\Spice-Wise\\wwwroot\\",
+      "BasePath": "_content/Spice-Wise",
+      "RelativePath": "svgs/pepper-hot-solid.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\svgs\\pepper-hot-solid.svg"
     }
   ]
 }

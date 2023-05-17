@@ -13,11 +13,9 @@
             <partial name="_Logo" />
             <partial name="_NavArea" model='new string[] {"Support", "About", "Preferences"}' />
         </header>
-        <div class="content">
-            <main role="main">
-                @RenderBody()
-            </main>
-        </div>
+        <main role="main" class="content">
+            @RenderBody()
+        </main>
         <footer class="footer">
 
         </footer>

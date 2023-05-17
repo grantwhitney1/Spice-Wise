@@ -70,7 +70,7 @@ body {
 }
 
 .brand {
-    font-size: 3.5vh;
+    font-size: 4.5vh;
     font-weight: 800;
     color: white;
     margin: auto;
@@ -80,7 +80,7 @@ body {
 }
 
 .header {
-    height: 10%;
+    height: 12.5%;
     box-shadow: 0 1px 64px rgb(0, 100, 25, 0.4);
     background-color: rgb(100 200 140);
     position: relative;
@@ -100,7 +100,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 2.5vh;
+    font-size: 3.5vh;
     color: white;
     font-weight: 700;
     margin: auto;
@@ -113,7 +113,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 2.5vh;
+    font-size: 3.5vh;
     color: rgb(100 200 140);
     background-color: rgba(255, 255, 255, 0.9);
     font-weight: 700;

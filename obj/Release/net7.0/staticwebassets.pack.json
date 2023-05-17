@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\fonts\\MPLUSRounded1c-Thin.ttf"
     },
     {
+      "Id": "C:\\Users\\grant\\Documents\\GitHub\\Spice-Wise\\wwwroot\\svgs\\pepper-hot-solid.svg",
+      "PackagePath": "staticwebassets\\svgs\\pepper-hot-solid.svg"
+    },
+    {
       "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.Spice-Wise.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
