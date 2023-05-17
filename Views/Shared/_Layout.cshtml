@@ -10,18 +10,9 @@
     <body>
         <header class="header">
             <div class="nav-section">
-                <a class="@(ViewData["Title"]!.Equals("Home") ? "nav-button-active unselectable" : "nav-button")"
-                 href="@Url.Action("Index", "Home")">
-                    browse
-                </a>
-                <a class="@(ViewData["Title"]!.Equals("My Collection") ? "nav-button-active unselectable" : "nav-button")"
-                 href="@Url.Action("Index", "Collection")">
-                    my collection
-                </a>
-                <a class="@(ViewData["Title"]!.Equals("My Planner") ? "nav-button-active unselectable" : "nav-button")"
-                 href="@Url.Action("Index", "Planner")">
-                    my planner
-                </a>
+                <partial name="_NavButton" view-data='new ViewDataDictionary(ViewData) { {"Action", "Index"}, {"Controller", "Home"} }'/>
+                <partial name="_NavButton" view-data='new ViewDataDictionary(ViewData) { {"Action", "Index"}, {"Controller", "Collection"} }' />
+                <partial name="_NavButton" view-data='new ViewDataDictionary(ViewData) { {"Action", "Index"}, {"Controller", "Planner"} }' />
             </div>
 
             <div class="brand">
@@ -30,18 +21,9 @@
             </div>
 
             <div class="nav-section">
-                <a class="@(ViewData["Title"]!.Equals("Support") ? "nav-button-active unselectable" : "nav-button")"
-                 href="@Url.Action("Index", "Support")">
-                    support
-                </a>
-                <a class="@(ViewData["Title"]!.Equals("About") ? "nav-button-active unselectable" : "nav-button")"
-                 href="@Url.Action("Index", "About")">
-                    about
-                </a>
-                <a class="@(ViewData["Title"]!.Equals("Preferences") ? "nav-button-active unselectable" : "nav-button")"
-                   href="@Url.Action("Index", "Preferences")">
-                    preferences
-                </a>
+                <partial name="_NavButton" view-data='new ViewDataDictionary(ViewData) { {"Action", "Index"}, {"Controller", "Support"} }'/>
+                <partial name="_NavButton" view-data='new ViewDataDictionary(ViewData) { {"Action", "Index"}, {"Controller", "About"} }' />
+                <partial name="_NavButton" view-data='new ViewDataDictionary(ViewData) { {"Action", "Index"}, {"Controller", "Preferences"} }' />
             </div>
         </header>
         <div class="content">
