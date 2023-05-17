@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Spice_Wise.Controllers
+namespace Spice_Wise.Controllers.ViewControllers
 {
-    public class HomeController : Controller
+    public class SupportController : Controller
     {
         public IActionResult Index()
         {

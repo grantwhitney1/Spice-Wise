@@ -3,15 +3,45 @@
     <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Spice-Wise</title>
+    <title>@ViewData["Title"] - spice-wise</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <script src="https://kit.fontawesome.com/68c27c1bdd.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="header">
+            <div class="nav-section">
+                <a class="@(ViewData["Title"]!.Equals("Home") ? "nav-button-active unselectable" : "nav-button")"
+                 href="@Url.Action("Index", "Home")">
+                    browse
+                </a>
+                <a class="@(ViewData["Title"]!.Equals("My Collection") ? "nav-button-active unselectable" : "nav-button")"
+                 href="@Url.Action("Index", "Collection")">
+                    my collection
+                </a>
+                <a class="@(ViewData["Title"]!.Equals("My Planner") ? "nav-button-active unselectable" : "nav-button")"
+                 href="@Url.Action("Index", "Planner")">
+                    my planner
+                </a>
+            </div>
+
             <div class="brand">
             <i class="fa-solid fa-pepper-hot logo" style="color: #ffffff;"></i>
-            Spice-Wise
+            spice-wise
+            </div>
+
+            <div class="nav-section">
+                <a class="@(ViewData["Title"]!.Equals("Support") ? "nav-button-active unselectable" : "nav-button")"
+                 href="@Url.Action("Index", "Support")">
+                    support
+                </a>
+                <a class="@(ViewData["Title"]!.Equals("About") ? "nav-button-active unselectable" : "nav-button")"
+                 href="@Url.Action("Index", "About")">
+                    about
+                </a>
+                <a class="@(ViewData["Title"]!.Equals("Preferences") ? "nav-button-active unselectable" : "nav-button")"
+                   href="@Url.Action("Index", "Preferences")">
+                    preferences
+                </a>
             </div>
         </header>
         <div class="content">
