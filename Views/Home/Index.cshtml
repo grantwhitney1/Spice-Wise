@@ -4,4 +4,12 @@
     ViewData["Title"] = "Home";
 }
 
-<partial name="~/Views/Shared/_Construction.cshtml" />
+<div class="recipe-container">
+    @for (int i = 0; i < 10; i++)
+    {
+        <div class="recipe-card">
+            Recipe
+        </div>
+    }
+</div>
+
