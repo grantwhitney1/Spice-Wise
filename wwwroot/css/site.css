@@ -89,6 +89,10 @@ body {
     flex-direction: row;
 }
 
+.hamburger {
+    display: none;
+}
+
 .desktop-nav {
     display: flex;
     width: 27.5%;
