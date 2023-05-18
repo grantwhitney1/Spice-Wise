@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\fonts\\MPLUSRounded1c-Thin.ttf"
     },
     {
+      "Id": "C:\\Users\\grant\\Documents\\GitHub\\Spice-Wise\\wwwroot\\svgs\\bars-solid.svg",
+      "PackagePath": "staticwebassets\\svgs\\bars-solid.svg"
+    },
+    {
       "Id": "C:\\Users\\grant\\Documents\\GitHub\\Spice-Wise\\wwwroot\\svgs\\pepper-hot-solid.svg",
       "PackagePath": "staticwebassets\\svgs\\pepper-hot-solid.svg"
     },

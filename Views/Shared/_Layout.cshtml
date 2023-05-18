@@ -6,12 +6,27 @@
     <title>@ViewData["Title"] - spice-wise</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <script src="https://kit.fontawesome.com/68c27c1bdd.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
-        <header class="header">
-            <partial name="_NavArea" model='new string[] {"Home", "Collection", "Planner"}'/>
-            <partial name="_Logo" />
-            <partial name="_NavArea" model='new string[] {"Support", "About", "Preferences"}' />
+        <header class="header" id="header">
+            <div class="desktop-nav">
+                <partial name="_NavArea" model='new string[] {"Home", "Collection", "Planner"}' />
+            </div>
+            <div style="
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-grow: 1;">
+                <partial name="_Logo" />
+                <div class ="hamburger">
+                    <partial  name="_Hamburger" />
+                </div>
+            </div>
+            <div class="desktop-nav">
+                <partial name="_NavArea" model='new string[] {"Support", "About", "Preferences"}' />
+            </div>
         </header>
         <main role="main" class="content">
             @RenderBody()
@@ -19,5 +34,26 @@
         <footer class="footer">
 
         </footer>
+
+        <script>
+            function updateNavArea() {
+                var width = $(window).width();
+                var height = $(window).height();
+                var aspectRatio = width / height;
+
+                if(aspectRatio > 4 / 3) {
+                    $('.desktop-nav').show();
+                    $('.hamburger').hide();
+                    document.getElementById("header").style.height = "12.5%";
+                } else {
+                    $('.desktop-nav').hide();
+                    $('.hamburger').show();
+                document.getElementById("header").style.height = "17.5%";
+                }
+            }
+
+            $(document).ready(updateNavArea);
+            $(window).resize(updateNavArea);
+        </script>
     </body>
 </html>

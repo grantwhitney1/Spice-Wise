@@ -26,7 +26,6 @@
   <ItemGroup>
     <Folder Include="Controllers\Api\" />
     <Folder Include="wwwroot\fonts\" />
-    <Folder Include="wwwroot\svgs\" />
   </ItemGroup>
 
 </Project>

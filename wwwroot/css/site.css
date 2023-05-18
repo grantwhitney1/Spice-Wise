@@ -89,10 +89,15 @@ body {
     flex-direction: row;
 }
 
+.desktop-nav {
+    display: flex;
+    width: 27.5%;
+}
+
 .nav-section {
     display: flex;
     flex-direction: row;
-    width: 35%;
+    flex-grow: 1;
 }
 
 .nav-button {
@@ -100,7 +105,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     color: white;
     font-weight: 700;
     margin: auto;
@@ -113,7 +118,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     color: rgb(100 200 140);
     background-color: rgba(255, 255, 255, 0.9);
     font-weight: 700;
