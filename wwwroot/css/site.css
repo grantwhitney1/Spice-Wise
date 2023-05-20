@@ -56,6 +56,10 @@
     cursor: default;
 }
 
+html {
+    font-size: 18px;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -64,20 +68,19 @@ body {
 
 h1 {
     font-weight: 800;
-    font-size: calc(2vh + 1vw);
+    font-size: 28px;
     margin: 4vh auto 2vh;
     color: rgb(60 120 90);
-    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
 }
 
 .logo {
-    width: 5vh;
+    width: 1vw;
     height: 5vh;
     margin-right: 1vw;
 }
 
 .brand {
-    font-size: 4.5vh;
+    font-size: 32px;
     font-weight: 800;
     color: white;
     margin: auto;
@@ -99,11 +102,30 @@ h1 {
 
 .hamburger {
     display: none;
+    margin: 0 4vw 0 auto;
+}
+
+.hamburger-logo {
+    fill: white;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    margin: auto 0 auto 0;
+    border-radius: 20%;
+}
+
+.hamburger-logo:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.hamburger-logo:active {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .desktop-nav {
     display: flex;
-    width: 27.5%;
+    flex-grow: 1;
 }
 
 .nav-section {
@@ -117,13 +139,13 @@ h1 {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 2.5vh;
+    font-size: 24px;
     color: white;
     background-color: rgb(100 200 140);
     font-weight: 700;
     margin: auto;
     padding: 1.5vh;
-    border-radius: 1.75vh;
+    border-radius: 20%;
 }
 
 .nav-button-active {
@@ -131,13 +153,13 @@ h1 {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 2.5vh;
+    font-size: 24px;
     color: rgb(100 200 140);
     background-color: rgba(255, 255, 255, 0.9);
     font-weight: 700;
     margin: auto;
     padding: 1.5vh;
-    border-radius: 1.75vh;
+    border-radius: 20%;
 }
 
 .nav-button:hover {
@@ -179,18 +201,18 @@ h1 {
     width: calc(48vh - 4vw);
     height: calc(8vw + 12vh);
     margin: 1vh;
-    border-radius: 2vh;
+    border-radius: 2rem;
     box-shadow: 2px 2px 16px rgb(0, 0, 0, 0.25);
 }
 
 .button {
     font-weight: 700;
-    font-size: calc(1.5vh + 1vw);
+    font-size: 18px;
     margin: 2vh auto 2vh;
     color: white;
     background-color: rgb(100 200 140);
-    padding: 1.5vh;
-    border-radius: 2vh;
+    padding: .75rem;
+    border-radius: 1rem;
     cursor: pointer;
 }
 

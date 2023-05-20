@@ -18,11 +18,11 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                flex-grow: 1;">
+                margin: 0 4vw 0 4vw;">
                 <partial name="_Logo" />
-                <div class ="hamburger">
-                    <partial  name="_Hamburger" />
-                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <partial name="_Hamburger" />
             </div>
             <div class="desktop-nav">
                 <partial name="_NavArea" model='new string[] {"Support", "About", "Preferences"}' />
@@ -48,7 +48,8 @@
                 } else {
                     $('.desktop-nav').hide();
                     $('.hamburger').show();
-                document.getElementById("header").style.height = "18vh";
+                    document.getElementById("hamburger").style.display = "flex";
+                    document.getElementById("header").style.height = "18vh";
                 }
             }
 
