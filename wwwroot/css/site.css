@@ -64,10 +64,10 @@ body {
 
 h1 {
     font-weight: 800;
-    font-size: calc(4vh + 1vw);
+    font-size: calc(2vh + 1vw);
     margin: 4vh auto 2vh;
     color: rgb(60 120 90);
-    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
 }
 
 .logo {
@@ -119,6 +119,7 @@ h1 {
     text-decoration: none;
     font-size: 2.5vh;
     color: white;
+    background-color: rgb(100 200 140);
     font-weight: 700;
     margin: auto;
     padding: 1.5vh;
@@ -140,7 +141,7 @@ h1 {
 }
 
 .nav-button:hover {
-    background-color: rgba(0, 0, 0, 0.10);
+    filter: brightness(.9);
     cursor: pointer;
 }
 
@@ -185,9 +186,18 @@ h1 {
 .button {
     font-weight: 700;
     font-size: calc(1.5vh + 1vw);
-    margin: 1vh auto 1vh;
+    margin: 2vh auto 2vh;
     color: white;
     background-color: rgb(100 200 140);
     padding: 1.5vh;
     border-radius: 2vh;
+    cursor: pointer;
+}
+
+.button:hover {
+    filter: brightness(.9);
+}
+
+.button:active {
+    filter: brightness(.75);
 }
