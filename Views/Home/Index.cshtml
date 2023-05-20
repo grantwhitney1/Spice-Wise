@@ -4,12 +4,6 @@
     ViewData["Title"] = "Home";
 }
 
-<div class="recipe-container">
-    @for (int i = 0; i < 10; i++)
-    {
-        <div class="recipe-card">
-            Recipe
-        </div>
-    }
-</div>
-
+<partial name="~/Views/Shared/_RecipesPreview.cshtml" model='"featured"' />
+<partial name="~/Views/Shared/_RecipesPreview.cshtml" model='"popular"'/>
+<partial name="~/Views/Shared/_RecipesPreview.cshtml" model='"trending"' />
