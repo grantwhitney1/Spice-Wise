@@ -111,7 +111,7 @@ h1 {
     height: 48px;
     padding: 8px;
     margin: auto 0 auto 0;
-    border-radius: 20%;
+    border-radius: 1rem;
 }
 
 .hamburger-logo:hover {
@@ -145,7 +145,7 @@ h1 {
     font-weight: 700;
     margin: auto;
     padding: 1.5vh;
-    border-radius: 20%;
+    border-radius: 1rem;
 }
 
 .nav-button-active {
@@ -159,7 +159,7 @@ h1 {
     font-weight: 700;
     margin: auto;
     padding: 1.5vh;
-    border-radius: 20%;
+    border-radius: 1rem;
 }
 
 .nav-button:hover {
