@@ -63,8 +63,10 @@
 
                 //navbar state
                 if(window.innerWidth > 1100) {
+                    hamburgerToggle.checked = false;
                     $('.desktop-nav').show();
                     $('.hamburger').hide();
+                    document.getElementById('header').style.height = "6rem";
                 } else {
                     $('.desktop-nav').hide();
                     $('.hamburger').show();
