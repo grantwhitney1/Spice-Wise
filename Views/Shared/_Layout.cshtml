@@ -21,9 +21,10 @@
                 margin: 0 4vw 0 4vw;">
                 <partial name="_Logo" />
             </div>
-            <div class="hamburger" id="hamburger">
+            <input id="hamburger-toggle" type="checkbox" style="display:none"/>
+            <label class="hamburger"  id="hamburger" for="hamburger-toggle">
                 <partial name="_Hamburger" />
-            </div>
+            </label>
             <div class="desktop-nav">
                 <partial name="_NavArea" model='new string[] {"Support", "About", "Preferences"}' />
             </div>
@@ -36,28 +37,44 @@
         </footer>
 
         <script>
+            const hamburgerToggle = document.querySelector('#hamburger-toggle');
+
+            function updateHeaderHeight() {
+                if(!hamburgerToggle.checked) {
+                    var width = $(window).width();
+                    var height = $(window).height();
+                    var aspectRatio = width / height;
+                    if (aspectRatio < 4 / 3)
+                        document.getElementById('header').style.height = "10rem";
+                    else
+                        document.getElementById('header').style.height = "6rem";
+                }
+            }
+
             function updateNavArea() {
-                var width = $(window).width();
-                var height = $(window).height();
-                var aspectRatio = width / height;
+                hamburgerToggle.addEventListener('change', () => {
+
+                    if (hamburgerToggle.checked) {
+                        document.getElementById('header').style.height = "80vh";
+                    } else {
+                        updateHeaderHeight();
+                    }
+                });
 
                 //navbar state
                 if(window.innerWidth > 1100) {
                     $('.desktop-nav').show();
                     $('.hamburger').hide();
-                    document.getElementById("header").style.height = "6rem";
                 } else {
                     $('.desktop-nav').hide();
                     $('.hamburger').show();
                     document.getElementById("hamburger").style.display = "flex";
-                    if (aspectRatio < 4 / 3)
-                        document.getElementById("header").style.height = "10rem";
-                    else
-                        document.getElementById("header").style.height = "6rem";
                 }
             }
 
             $(document).ready(updateNavArea);
+            $(document).ready(updateHeaderHeight);
+            $(window).resize(updateHeaderHeight);
             $(window).resize(updateNavArea);
         </script>
     </body>
