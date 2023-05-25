@@ -41,15 +41,19 @@
                 var height = $(window).height();
                 var aspectRatio = width / height;
 
-                if(aspectRatio > 4 / 3) {
+                //navbar state
+                if(window.innerWidth > 1100) {
                     $('.desktop-nav').show();
                     $('.hamburger').hide();
-                    document.getElementById("header").style.height = "12vh";
+                    document.getElementById("header").style.height = "6rem";
                 } else {
                     $('.desktop-nav').hide();
                     $('.hamburger').show();
                     document.getElementById("hamburger").style.display = "flex";
-                    document.getElementById("header").style.height = "18vh";
+                    if (aspectRatio < 4 / 3)
+                        document.getElementById("header").style.height = "10rem";
+                    else
+                        document.getElementById("header").style.height = "6rem";
                 }
             }
 
