@@ -1,4 +1,4 @@
 ﻿<a class="@(ViewData["Title"]!.Equals(ViewData["Controller"]) ? "nav-button-active unselectable" : "nav-button")"
     href="@Url.Action(ViewData["Action"]!.ToString(), ViewData["Controller"]!.ToString())">
-        @ViewData["Controller"].ToString().ToLower()
+        @ViewData["Controller"]!.ToString()!.ToLower()
 </a>

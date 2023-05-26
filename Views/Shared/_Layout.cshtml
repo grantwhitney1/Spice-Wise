@@ -29,6 +29,7 @@
                 <partial name="_NavArea" model='new string[] {"Support", "About", "Preferences"}' />
             </div>
         </header>
+        <partial name="_NavDropdown" model='new string[] {"Home", "Collection", "Planner", "Support", "About", "Preferences"}' />
         <main role="main" class="content">
             @RenderBody()
         </main>
@@ -53,12 +54,10 @@
 
             function updateNavArea() {
                 hamburgerToggle.addEventListener('change', () => {
-
-                    if (hamburgerToggle.checked) {
-                        document.getElementById('header').style.height = "80vh";
-                    } else {
-                        updateHeaderHeight();
-                    }
+                    if(!hamburgerToggle.checked)
+                        document.getElementById('nav-dropdown').style.height = "0";
+                    else
+                        document.getElementById('nav-dropdown').style.height = "60vh";
                 });
 
                 //navbar state

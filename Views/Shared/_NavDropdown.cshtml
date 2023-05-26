@@ -1,0 +1,8 @@
+﻿@model string[]
+
+<div class="nav-dropdown" id="nav-dropdown">
+    @foreach (string s in Model)
+    {
+        <partial name="_NavButton" view-data='new ViewDataDictionary(ViewData) { {"Action", "Index"}, {"Controller", @s} }' />
+    }
+</div>

@@ -100,6 +100,22 @@ h1 {
     flex-direction: row;
 }
 
+.nav-dropdown {
+    position: sticky;
+    top: 6rem;
+    box-shadow: 0 -1px 64px rgb(0, 0, 0, 0.4);
+    background-color: rgb(100 200 140);
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+}
+
+.nav-dropdown > * {
+    font-size: 2vh !important;
+    padding: 1vh !important;
+}
+
 .hamburger {
     display: none;
     margin: 0 4vw 0 auto;
@@ -168,7 +184,7 @@ h1 {
 }
 
 .footer {
-    height: 6vh;
+    height: 4rem;
     box-shadow: 0 -1px 64px rgb(0, 0, 0, 0.4);
     background-color: rgb(60 120 90);
     position: relative;
