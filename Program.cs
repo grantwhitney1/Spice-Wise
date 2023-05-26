@@ -1,7 +1,9 @@
 using Microsoft.Extensions.DependencyInjection;
+using Spice_Wise.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<DataContext>();
 
 var app = builder.Build();
 

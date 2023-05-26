@@ -54,5 +54,13 @@ namespace Spice_Wise.Controllers.Api.Ingredients
 
             return Ok(model);
         }
+
+        [HttpGet]
+        public async Task<ActionResult> GetAll()
+        {
+            var models = await _context.Ingredients.ToListAsync();
+
+            return Ok(models);
+        }
     }
 }
