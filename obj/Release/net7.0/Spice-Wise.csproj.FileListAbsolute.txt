@@ -24,7 +24,6 @@ C:\Users\grant\source\repos\Spice-Wise\obj\Release\net7.0\refint\Spice-Wise.dll
 C:\Users\grant\source\repos\Spice-Wise\obj\Release\net7.0\Spice-Wise.pdb
 C:\Users\grant\source\repos\Spice-Wise\obj\Release\net7.0\Spice-Wise.genruntimeconfig.cache
 C:\Users\grant\source\repos\Spice-Wise\obj\Release\net7.0\ref\Spice-Wise.dll
-C:\Users\grant\Documents\GitHub\Spice-Wise\bin\Release\net7.0\appsettings.Development.json
 C:\Users\grant\Documents\GitHub\Spice-Wise\bin\Release\net7.0\appsettings.json
 C:\Users\grant\Documents\GitHub\Spice-Wise\bin\Release\net7.0\Spice-Wise.exe
 C:\Users\grant\Documents\GitHub\Spice-Wise\bin\Release\net7.0\Spice-Wise.deps.json
