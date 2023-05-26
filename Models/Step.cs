@@ -1,11 +1,14 @@
 ﻿namespace Spice_Wise.Models;
 
-public class Step
+public class Step : StepDto
+{
+    public Recipe? Recipe { get; set; }
+    public virtual ICollection<StepIngredient> StepsIngredients { get; set; } = new List<StepIngredient>();
+}
+
+public class StepDto
 {
     public int Id { get; set; }
     public string Instruction { get; set; } = String.Empty;
-    public Recipe? Recipe { get; set; }
     public int RecipeId { get; set; }
-    
-    public virtual ICollection<StepIngredient> StepsIngredients { get; set; } = new List<StepIngredient>();
 }
