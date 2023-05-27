@@ -25,7 +25,7 @@ namespace Spice_Wise.Controllers.Api.Ingredients
             if(dto == null)
                 return BadRequest("Cannot post a null entity.");
 
-            if (dto.Name.IsNullOrEmpty() || dto.Unit.IsNullOrEmpty())
+            if (dto.Name.IsNullOrEmpty() || dto.Unit.IsNullOrEmpty() || dto.IngredientCategory.IsNullOrEmpty())
                 return BadRequest("This field cannot be empty.");
 
             if (dto.Name.Length > 24)
@@ -34,18 +34,11 @@ namespace Spice_Wise.Controllers.Api.Ingredients
             if (dto.Name.Length < 3)
                 return BadRequest("This field cannot be less than 3 characters.");
 
-            if (!await _context.IngredientCategories.AnyAsync(x => x.Id == dto.IngredientCategoryId))
-                return NotFound("The given ingredient category cannot be found.");
-
             //Object mapping
             
             model.Name = dto.Name;
             model.Unit = dto.Unit;
-            model.IngredientCategoryId = dto.IngredientCategoryId;
-            model.IngredientCategory = await _context
-                .IngredientCategories
-                .FirstOrDefaultAsync(x =>
-                    x.Id == dto.IngredientCategoryId);
+            model.IngredientCategory = dto.IngredientCategory;
 
             //Save to DB
 
@@ -93,7 +86,7 @@ namespace Spice_Wise.Controllers.Api.Ingredients
             if (dto == null)
                 return BadRequest("Cannot post a null entity.");
 
-            if (dto.Name.IsNullOrEmpty() || dto.Unit.IsNullOrEmpty())
+            if (dto.Name.IsNullOrEmpty() || dto.Unit.IsNullOrEmpty() || dto.IngredientCategory.IsNullOrEmpty())
                 return BadRequest("This field cannot be empty.");
 
             if (dto.Name.Length > 24)
@@ -102,18 +95,11 @@ namespace Spice_Wise.Controllers.Api.Ingredients
             if (dto.Name.Length < 3)
                 return BadRequest("This field cannot be less than 3 characters.");
 
-            if (!await _context.IngredientCategories.AnyAsync(x => x.Id == dto.IngredientCategoryId))
-                return NotFound("The given ingredient category cannot be found.");
-
             //Object mapping
 
             model.Name = dto.Name;
             model.Unit = dto.Unit;
-            model.IngredientCategoryId = dto.IngredientCategoryId;
-            model.IngredientCategory = await _context
-                .IngredientCategories
-                .FirstOrDefaultAsync(x =>
-                    x.Id == dto.IngredientCategoryId);
+            model.IngredientCategory = dto.IngredientCategory;
 
             //Save to DB
 

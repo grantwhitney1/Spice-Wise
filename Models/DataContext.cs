@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Spice_Wise.Models.Static;
 
 namespace Spice_Wise.Models;
 
@@ -10,7 +11,6 @@ public class DataContext : DbContext
     public DbSet<Step> Steps { get; set; }
     public DbSet<StepIngredient> StepsIngredients { get; set; }
     public DbSet<Ingredient> Ingredients { get; set; }
-    public DbSet<IngredientCategory> IngredientCategories { get; set; }
 
     public DataContext(IConfiguration config)
         => _config = config;

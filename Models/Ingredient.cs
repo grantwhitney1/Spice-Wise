@@ -1,8 +1,9 @@
-﻿namespace Spice_Wise.Models;
+﻿using Spice_Wise.Models.Static;
+
+namespace Spice_Wise.Models;
 
 public class Ingredient : IngredientGetDto
 {
-    public IngredientCategory? IngredientCategory { get; set; }
     public virtual ICollection<StepIngredient> StepsIngredients { get; set; } = new List<StepIngredient>();
 }
 
@@ -15,5 +16,5 @@ public class IngredientPostDto
 {
     public string Name { get; set; } = String.Empty;
     public string Unit { get; set; } = String.Empty;
-    public int IngredientCategoryId { get; set; }
+    public string IngredientCategory { get; set; } = String.Empty;
 }

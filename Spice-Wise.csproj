@@ -24,10 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Api\IngredientsCategories\" />
     <Folder Include="Controllers\Api\StepsIngredients\" />
     <Folder Include="Controllers\Api\Steps\" />
-    <Folder Include="Controllers\Api\RecipesCategories\" />
     <Folder Include="Controllers\Api\Recipes\" />
     <Folder Include="wwwroot\fonts\" />
   </ItemGroup>
