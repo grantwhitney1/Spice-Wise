@@ -25,7 +25,7 @@ namespace Spice_Wise.Controllers.Api.Ingredients
             if(dto == null)
                 return BadRequest("Cannot post a null entity.");
 
-            if (dto.Name.IsNullOrEmpty() || dto.Unit.IsNullOrEmpty() || dto.IngredientCategory.IsNullOrEmpty())
+            if (dto.Name.IsNullOrEmpty() || dto.Unit.IsNullOrEmpty() || dto.Category.IsNullOrEmpty())
                 return BadRequest("This field cannot be empty.");
 
             if (dto.Name.Length > 24)
@@ -38,7 +38,7 @@ namespace Spice_Wise.Controllers.Api.Ingredients
             
             model.Name = dto.Name;
             model.Unit = dto.Unit;
-            model.IngredientCategory = dto.IngredientCategory;
+            model.Category = dto.Category;
 
             //Save to DB
 
@@ -86,7 +86,7 @@ namespace Spice_Wise.Controllers.Api.Ingredients
             if (dto == null)
                 return BadRequest("Cannot post a null entity.");
 
-            if (dto.Name.IsNullOrEmpty() || dto.Unit.IsNullOrEmpty() || dto.IngredientCategory.IsNullOrEmpty())
+            if (dto.Name.IsNullOrEmpty() || dto.Unit.IsNullOrEmpty() || dto.Category.IsNullOrEmpty())
                 return BadRequest("This field cannot be empty.");
 
             if (dto.Name.Length > 24)
@@ -99,7 +99,7 @@ namespace Spice_Wise.Controllers.Api.Ingredients
 
             model.Name = dto.Name;
             model.Unit = dto.Unit;
-            model.IngredientCategory = dto.IngredientCategory;
+            model.Category = dto.Category;
 
             //Save to DB
 

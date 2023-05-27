@@ -1,14 +1,20 @@
-﻿namespace Spice_Wise.Models;
+﻿using Spice_Wise.Models.Static;
 
-public class Recipe : RecipeDto
+namespace Spice_Wise.Models;
+
+public class Recipe : RecipeGetDto
 {
     public virtual ICollection<Step> Steps { get; set; } = new List<Step>();
 }
 
-public class RecipeDto
+public class RecipeGetDto : RecipePostDto
 {
     public int Id { get; set; }
+}
+
+public class RecipePostDto
+{
     public string Name { get; set; } = String.Empty;
     public string ImageUrl { get; set; } = String.Empty;
-    public virtual ICollection<RecipeCategory> Categories { get; set; } = new List<RecipeCategory>();
+    public string Category { get; set; } = String.Empty;
 }

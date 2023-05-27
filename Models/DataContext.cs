@@ -7,7 +7,6 @@ public class DataContext : DbContext
 {
     private readonly IConfiguration _config;
     public DbSet<Recipe> Recipes { get; set; }
-    public DbSet<RecipeCategory> RecipeCategories { get; set; }
     public DbSet<Step> Steps { get; set; }
     public DbSet<StepIngredient> StepsIngredients { get; set; }
     public DbSet<Ingredient> Ingredients { get; set; }

@@ -10,5 +10,6 @@ public class StepDto
 {
     public int Id { get; set; }
     public string Instruction { get; set; } = String.Empty;
+    public int Order { get; set; }
     public int RecipeId { get; set; }
 }

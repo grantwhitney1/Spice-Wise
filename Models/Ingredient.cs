@@ -16,5 +16,5 @@ public class IngredientPostDto
 {
     public string Name { get; set; } = String.Empty;
     public string Unit { get; set; } = String.Empty;
-    public string IngredientCategory { get; set; } = String.Empty;
+    public string Category { get; set; } = String.Empty;
 }
